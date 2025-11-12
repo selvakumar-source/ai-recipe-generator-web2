@@ -6,7 +6,7 @@ export default function App() {
     <p> this is para2 line as test</p>
     <th> header1,header2,header3</th>
    <p> Recipe</p>
-   <p> Recipe-1</p>
+   <p> Recipe-1.1</p>
     </div>
   )
 }
