@@ -1,13 +1,13 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { Authenticator } from "@aws-amplify/ui-react";
 
-const container = document.getElementById('root')
-if (!container) throw new Error('Root element not found')
-
-createRoot(container).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <Authenticator>
+      <App />
+    </Authenticator>
   </React.StrictMode>
-)
+);
